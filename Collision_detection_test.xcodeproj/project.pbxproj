@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		41578FEB2087693000AFAB11 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41578FEA2087693000AFAB11 /* ResourcePath.mm */; };
 		41578FEE2087693000AFAB11 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41578FED2087693000AFAB11 /* main.cpp */; };
-		41578FF12087693000AFAB11 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41578FF02087693000AFAB11 /* cute_image.jpg */; };
-		41578FF32087693000AFAB11 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 41578FF22087693000AFAB11 /* nice_music.ogg */; };
 		41578FF52087693000AFAB11 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41578FF42087693000AFAB11 /* sansation.ttf */; };
 		41578FF72087693000AFAB11 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41578FF62087693000AFAB11 /* icon.png */; };
+		4157900120876DA700AFAB11 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4157900020876DA700AFAB11 /* Ball.cpp */; };
+		415790C9208B8F5000AFAB11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415790C8208B8F5000AFAB11 /* Images.xcassets */; };
+		41C1F5432099EF5300D4557F /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5422099EF5300D4557F /* Physics.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +22,11 @@
 		41578FEA2087693000AFAB11 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		41578FEC2087693000AFAB11 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		41578FED2087693000AFAB11 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		41578FF02087693000AFAB11 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
-		41578FF22087693000AFAB11 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		41578FF42087693000AFAB11 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		41578FF62087693000AFAB11 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4157900020876DA700AFAB11 /* Ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		415790C8208B8F5000AFAB11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		41C1F5422099EF5300D4557F /* Physics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,10 @@
 				41578FEA2087693000AFAB11 /* ResourcePath.mm */,
 				41578FEC2087693000AFAB11 /* ResourcePath.hpp */,
 				41578FED2087693000AFAB11 /* main.cpp */,
+				4157900020876DA700AFAB11 /* Ball.cpp */,
+				41C1F5422099EF5300D4557F /* Physics.cpp */,
 				41578FEF2087693000AFAB11 /* Resources */,
+				415790C8208B8F5000AFAB11 /* Images.xcassets */,
 				41578FE82087693000AFAB11 /* Supporting Files */,
 			);
 			path = Collision_detection_test;
@@ -77,8 +82,6 @@
 		41578FEF2087693000AFAB11 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				41578FF02087693000AFAB11 /* cute_image.jpg */,
-				41578FF22087693000AFAB11 /* nice_music.ogg */,
 				41578FF42087693000AFAB11 /* sansation.ttf */,
 				41578FF62087693000AFAB11 /* icon.png */,
 			);
@@ -127,6 +130,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 41578FDB2087692F00AFAB11;
 			productRefGroup = 41578FE62087693000AFAB11 /* Products */;
@@ -143,10 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415790C9208B8F5000AFAB11 /* Images.xcassets in Resources */,
 				41578FF72087693000AFAB11 /* icon.png in Resources */,
 				41578FF52087693000AFAB11 /* sansation.ttf in Resources */,
-				41578FF32087693000AFAB11 /* nice_music.ogg in Resources */,
-				41578FF12087693000AFAB11 /* cute_image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4157900120876DA700AFAB11 /* Ball.cpp in Sources */,
 				41578FEE2087693000AFAB11 /* main.cpp in Sources */,
 				41578FEB2087693000AFAB11 /* ResourcePath.mm in Sources */,
+				41C1F5432099EF5300D4557F /* Physics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +189,8 @@
 		41578FF82087693000AFAB11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
@@ -207,7 +212,6 @@
 					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
 				);
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
 				SFML_BINARY_TYPE = DYLIBS;
@@ -228,8 +232,8 @@
 		41578FF92087693000AFAB11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
@@ -251,7 +255,6 @@
 					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
 				);
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
 				SFML_BINARY_TYPE = DYLIBS;
@@ -272,20 +275,26 @@
 		41578FFB2087693000AFAB11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J2H46PQDL;
 				INFOPLIST_FILE = "Collision_detection_test/Collision_detection_test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		41578FFC2087693000AFAB11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J2H46PQDL;
 				INFOPLIST_FILE = "Collision_detection_test/Collision_detection_test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -299,7 +308,7 @@
 				41578FF92087693000AFAB11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		41578FFA2087693000AFAB11 /* Build configuration list for PBXNativeTarget "Collision_detection_test" */ = {
 			isa = XCConfigurationList;
@@ -308,7 +317,7 @@
 				41578FFC2087693000AFAB11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
